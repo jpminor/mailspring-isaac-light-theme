@@ -80,6 +80,8 @@
 	.mail-important-icon {
 		background-size: 14px;
 		margin-top: 2px;
+		margin-right: 10px;
+		width: 15px;
 	}
 	// Labels
 	.mail-label.removable {
@@ -152,6 +154,16 @@
 			color: @isaac-dark;
 			font-size: 0.857em;
 		}
+		.autoload-images-header {
+			background-color: @isaac-accent;
+			border: none;
+			color: @white;
+			margin: 0;
+			padding: 10px 40px;
+			.option {
+				color: @white;
+			}
+		}
 	}
 	.message-subject-wrap {
 		margin: 0 auto 20px;
@@ -181,6 +193,11 @@
 			box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 14px 5px;
 			.message-item-area {
 				padding: 0;
+				.message-body-loading {
+					margin: auto;
+					padding: 40px 40px 60px;
+					text-align: center;
+				}
 			}
 			&.composer-outer-wrap {
 				&.focused {
@@ -407,7 +424,7 @@ iframe {
 
 .download-all {
 	margin-top: 30px;
-	padding: 40px 40px 0;
+	padding: 40px;
 	border-top: 1px solid @isaac-light;
 }
 
