@@ -249,9 +249,21 @@ a:hover {
 }
 
 .toolbar-window-controls button {
-	background-size: 12px 50px;
+	background-size: 12px 51px;
 	border-radius: 100px;
 	filter: grayscale(100%);
+	.close {
+		background-image: url(images/application-frame/close@2x.png);
+	}
+	.minimize {
+		background-image: url(images/application-frame/minimize@2x.png);
+	}
+	.maximize {
+		background-image: url(images/application-frame/fullscreen@2x.png);
+	}
+	&:hover button {
+		background-position: 0 -13px;
+	}
 }
 
 body.platform-win32 {

@@ -30,7 +30,8 @@
 		}
 	}
 	.checkmark .inner {
-		border-color: lighten(@isaac-dark, 50%);
+		background-color: @isaac-light;
+		border: none;
 	}
 	&.selected {
 		.checkmark .inner {
@@ -108,6 +109,9 @@
 				border-bottom: 0;
 			}
 			&:hover {
+				.checkmark .inner {
+					background-color: darken(@isaac-accent-light, 2%);
+				}
 				.thread-icon {
 					visibility: inherit;
 				}
@@ -173,6 +177,11 @@
 				}
 				&:hover {
 					background-color: @isaac-accent-light;
+					&.selected {
+						.checkmark .inner {
+							background-color: transparent;
+						}
+					}
 				}
 				&.focused {
 					color: @isaac-dark !important;
