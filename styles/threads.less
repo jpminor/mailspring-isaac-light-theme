@@ -10,6 +10,7 @@
 		margin: auto;
 	}
 }
+
 .list-item.list-tabular-item {
 	.btn.action {
 		box-shadow: none !important;
@@ -334,7 +335,11 @@
 				.list-rows {
 						border: 1px solid @isaac-border;
 						box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 14px 5px;
+						&:empty {
+							display: none;
+						}
 				}
+
 			}
 		}
 	}
