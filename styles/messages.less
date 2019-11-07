@@ -184,6 +184,11 @@
 		}
 	}
 	// Message Body
+	.message-item-area {
+		.message-iframe-container {
+			margin: 20px 60px;
+		}
+	}
 	.message-item-wrap {
 		padding-bottom: 20px;
 		.message-item-white-wrap {
@@ -234,18 +239,18 @@
 			}
 			.iframe-container {
 				margin-bottom: 50px;
-				padding: 10px 40px 0;
+				padding: 10px 20px 0;
 			}
 			.quoted-text-control {
 				border-radius: @base-border-radius;
-				margin: 20px 40px 40px;
+				margin: 20px;
 			}
 		}
 		&.collapsed {
 			.message-item-white-wrap {
 				background-color: @white;
 				color: darken(@isaac-light, 20%);
-				padding: 20px 40px;
+				padding: 20px 20px;
 				.message-item-area {
 					font-size: 1em;
 					.collapsed-snippet {
@@ -524,7 +529,7 @@ iframe {
 	max-width: 800px;
 	margin: auto;
 	.message-header {
-		padding: 40px 40px;
+		padding: 20px;
 		&::before {
 			background-color: @white;
 			left: 0;
