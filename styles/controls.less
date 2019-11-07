@@ -248,20 +248,20 @@ a:hover {
 	font-size: 13px;
 }
 
-.toolbar-window-controls button {
-	border-radius: 100px;
-	filter: grayscale(100%);
-	.close {
-		background-image: url(images/application-frame/close@2x.png);
-	}
-	.minimize {
-		background-image: url(images/application-frame/minimize@2x.png);
-	}
-	.maximize {
-		background-image: url(images/application-frame/fullscreen@2x.png);
-	}
-	&:hover button {
-		background-position: 0 -13px;
+.toolbar-window-controls {
+	margin-top: 9px;
+	button {
+		border-radius: 100px;
+		filter: grayscale(100%);
+		width: 13px;
+    	height: 13px;
+		&.close, &.minimize, &.maximize {
+			background-image: none;
+	    	background-color: #cccccc;
+		}
+    	&:hover {
+    		background-color: #aaaaaa;
+ 		}
 	}
 }
 
